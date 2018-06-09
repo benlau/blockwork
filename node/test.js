@@ -23,11 +23,11 @@ eos.contract('blockwork').then(c => {
         json: true,
         lower_bound: id,
         upper_bound: id+1,
-        limit: 10        
+        limit: 10
     }).then(result => {
        console.log(result); 
     }).catch(err => {
         console.log("error");
-        reject(err)
+        reject(err);
     });
 })
