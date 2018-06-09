@@ -10,6 +10,8 @@ cleos wallet create
 cleos wallet import 5JPRj64ng9N37bZGnrHMwxb8LGoyR8dsXxTFXCLzT21xCHdPYQn
 cleos wallet import 5JgS8oAp4WFpiqex1VLAqwiQHgSUY3vtgJaiXJQr5d7QfpNj96P
 
+cleos create account eosio blockwork EOS766rWvgbopZC9fWrpfQb59iXHYtFpqYkXsthn2CthF2Xh84gpi  EOS5xfuXy122R7VxRkdWLeimURRGoWCsy6NQWt9JGGwrigJmsrX4e
+
 cd /work/contracts/blockwork
 
 eosiocpp -o blockwork.wast blockwork.cpp ; eosiocpp -g blockwork.abi blockwork.cpp ; sed -ie "s/i64i64i64/i64/" blockwork.abi 
